@@ -13,24 +13,16 @@ public class Npc : MonoBehaviour
         level = 5;
 
         health += level;
-        print("Здоров'я " + health);
+        print("Г‡Г¤Г®Г°Г®Гў'Гї " + health);
     }
 
     // Update is called once per frame
     void Update()
     {
-        // Створення змінної позиції:
-        // Vector3 – це спеціальний тип даних для зберігання координат позиції об’єкта.
+    
         Vector3 newPosition;
-
-        // Присвоєння поточної позиції:
-        // transform – це компонент, що містить властивість position.
         newPosition = transform.position;
-
-        // Додавання руху вперед (по осі z або x, залежно від напряму)
         newPosition.z += speed * Time.deltaTime;
-
-        // Застосування нової позиції
         transform.position = newPosition;
     }
 }
