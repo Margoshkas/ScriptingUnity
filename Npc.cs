@@ -13,7 +13,7 @@ public class Npc : MonoBehaviour
         level = 5;
 
         health += level;
-        print("Çäîðîâ'ÿ " + health);
+        print("Здоров'я " + health);
     }
 
     // Update is called once per frame
